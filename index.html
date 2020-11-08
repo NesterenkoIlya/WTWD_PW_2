@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header_logo"><p>LOGO</p></div>
+        <nav>
+            <div class="nav">
+                <a href="#galery">HOME</a>
+                <a href="#about_us">ABOUT US</a>
+                <a href="#shoes">SHOES</a>
+                <a href="#testimonials">TESTIMONIALS</a>
+                <a href="#" id="cart" class="icon">&#128722;</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="galery" id="galery">
+            <img src="img/Air Max Plus.jpg" alt="Air Max Plus" width="100%">
+        </div>
+        <div class="about_us" id="about_us">
+            <h1>ABOUT US</h1>
+            <div class="wrapper">
+                <div class="about_left">
+                    <img src="img/Nike Logo.jpg" alt="about_us" width="500" height="400">
+                </div>
+                <div class="about_right">
+                    <ul>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, aperiam.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, facilis?</li>
+                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, quae.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, quo!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="shoes" id="shoes">
+            <h1>Our shoeses</h1>
+            <ol>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, molestiae?</li>
+                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, dolores!</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, et.
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            <ol>
+                                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, perspiciatis!</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ipsam?</li>
+                                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, eaque.</li>
+                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, error.</li>
+                                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, commodi!</li>
+                                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, natus.</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, magni?</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, iste!
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, vel.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, ab?</li>
+                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, reprehenderit?</li>
+                    </ol>
+                </li>
+                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, voluptas.</li>
+            </ol>
+        </div>
+        <div class="testimonials">
+            <h1>TESTIMONIALS</h1>
+            <div class="wrapper">
+                <table>
+                    <caption>Prices</caption>
+                    <colgroup>
+                        <col span="1" style="background:Khaki"><!-- С помощью этой конструкции задаем цвет фона для первых двух столбцов таблицы-->
+                        <col style="background-color:LightCyan"><!-- Задаем цвет фона для следующего (одного) столбца таблицы-->
+                      </colgroup>
+                    <tr>
+                        <th>Name</th><th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>Lorem, ipsum.</td><td>499</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem, ipsum.</td><td>349</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem, ipsum.</td><td>449</td>
+                    </tr>
+                    <tr>
+                        <td>Lorem, ipsum.</td><td>299</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="forms">
+            <h1>FORMS</h1>
+            <div class="wrapper">
+                <form>
+                    <fieldset>
+                        <legend>Register</legend>
+                        <p><label for="name">Name <em>* </em></label><input type="text" id="name"></p>
+                        <p><label for="surname">Surname <em>* </em></label><input type="text" id="surname"></p>
+                        <p><label for="email">E-mail </label><input type="email" id="email"></p>
+                        <div class="radio">
+                            <p>Sex</p>
+                            <label>
+                                <input type="radio" name="sex" value="Men"> Men
+                            </label>
+                            <label>
+                                <input type="radio" name="sex" value="Women"> Women
+                            </label>
+                        </div>
+                        <div class="country">
+                            <label for="country">Country</label>
+                            <select name="country">
+                                <option>Select Country</option>
+                                <option value="Ukraine">Ukraine</option>
+                                <option value="USA">USA</option>
+                                <option value="England">England</option>
+                                <option value="Russia">Russia</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Poland">Poland</option>
+                                <option value="Japan">Japan</option>
+                            </select>
+                        </div>
+                        <p><input type="submit" value="Register"></p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Help Us</legend>
+                        <label for="Suggestions">Suggestions<textarea name="textarea" class="textarea-field"></textarea></label>
+                        <label for="file"><br>Or send file with your suggestions<br>
+                            <input type="file">
+                        </label>
+                        <p><input type="submit" value="Send"></p>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
